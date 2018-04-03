@@ -1,72 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <title>Directions service</title>
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #floating-panel {
-        position: absolute;
-        top: 10px;
-        left: 25%;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: 'Roboto','sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="floating-panel">
-    <b>Start: </b>
-    <select id="start">
-      <option value="New Delhi, India">New Delhi</option>
-      <option value="Mumbai, India">Mumbai</option>
-      <option value="Kolkata, India">Kolkata</option>
-      <option value="Banglore, India">Banglore</option>
-      <option value="Chennai, India">Chennai</option>
-      <option value="Nagpur, India">Nagpur</option>
-      
-    </select>
-	<br>
-    <b>End: </b>
-    <select id="end">
-      <option value="khatmandu, Nepal">Khatmandu</option>
-      <option value="Dhaka, bangladesh">Dhaka</option>
-      <option value="Islamabad, Pakistan">Pakistan</option>
-      <option value="Thimphu, Bhutan">Bhutan</option>
-      <option value="Mumbai, India">Mumbai</option>
-      <option value="gallup, nm">Gallup, NM</option>
-      <option value="flagstaff, az">Flagstaff, AZ</option>
-      <option value="winona, az">Winona</option>
-      <option value="kingman, az">Kingman</option>
-      <option value="barstow, ca">Barstow</option>
-      <option value="san bernardino, ca">San Bernardino</option>
-      <option value="los angeles, ca">Los Angeles</option>
-    </select>
-	 <input type="submit" value="Optimal" id="submit1">
-	 <input type="submit" value="Possible" id="submit2">
-	 <input type="submit" value="Alternative" id="submit3">
+function hello(){
+	window.alert('hello');
 	
-    </div>
-    <div id="map"></div>
-    <script>
+}
       function initMap() {
 	  
         var directionsService = new google.maps.DirectionsService;
@@ -265,12 +200,5 @@
 		
 	
 	  
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-ymmGqYtFkVGpGhNq3SV13KgBp9xvym4&callback=initMap">
-    </script>
-
-
-	
-  </body>
-</html>
+   
+   
